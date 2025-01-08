@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+		<title>ticket</title>
+
+	<link rel="stylesheet" href="../static/styles.css">
+	</head>
+<body>
+
+    <div id="ticket" class="ticket">
+        <header class="ticket-header">
+            <h1>כרטיס כניסה</h1>
+            <p>תאריך: 11.2.2025</p>
+            <p>שעה: 19:00</p>
+            <p>כתובת: הפלמ"ח 2א רעננה</p>
+        </header>
+        <main class="ticket-body">
+          <div>
+            <h2>פרטים אישיים</h2>
+            <p>שם: {{ user.name }}</p>
+            <p>מקום: שורה {{row}} כיסא {{seat}}</p>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+<script defer src="../static/index.js"></script>
+
+</html>
